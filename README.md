@@ -12,3 +12,12 @@ The goal of the project is to detect boundaries of roads and fields. This projec
 1. Phongsiri Nirachornkul  : Coder, Presentation builder
 2. John Lage               : Coder, documentation
 3. Ibrahim Alkuwaifi       : Documentation
+
+
+# Progress
+
+We found a lot of TN (True Negative), the missing line ,and FP (False Positive), aka. unnecessary lines during evaluation. The only thing we need here is True positive, the line that matched on road.
+
+![alt text](https://github.com/bring-nirachornkul/Road-Detection/blob/master/Compare%20and%20contrast.png?raw=true)
+
+Our plan to obtain the ground-truth image (expected outcome) is to find the middle zone between overfitting and underfitting the line mark in hough transformation. We will compare ground-truth image (expected outcome) with the result from the generated image via hough transformation by MAP (mean average precision). 
